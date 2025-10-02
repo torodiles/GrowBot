@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 32bc4ca8dcdc71e40b39399adcaf411d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259218
+  packageName: Happy Harvest - 2D Sample Project
+  packageVersion: 1.61
+  assetPath: Assets/HappyHarvest/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+  uploadId: 722366

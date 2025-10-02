@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c6d69aadb1cd80147a18b21f4a6e9bba
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259218
+  packageName: Happy Harvest - 2D Sample Project
+  packageVersion: 1.61
+  assetPath: Assets/HappyHarvest/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+  uploadId: 722366

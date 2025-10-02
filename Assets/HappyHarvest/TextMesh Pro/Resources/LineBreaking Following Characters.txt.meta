@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f34a7f0205494084e9b16273f84693bf
+timeCreated: 1425440388
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259218
+  packageName: Happy Harvest - 2D Sample Project
+  packageVersion: 1.61
+  assetPath: Assets/HappyHarvest/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+  uploadId: 722366

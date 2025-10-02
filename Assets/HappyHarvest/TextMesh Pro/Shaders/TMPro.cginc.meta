@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f17bbb21822a70449b5eb8ac92862e9b
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: Version 2.0
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259218
+  packageName: Happy Harvest - 2D Sample Project
+  packageVersion: 1.61
+  assetPath: Assets/HappyHarvest/TextMesh Pro/Shaders/TMPro.cginc
+  uploadId: 722366

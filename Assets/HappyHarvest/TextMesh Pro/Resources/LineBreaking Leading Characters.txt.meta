@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e263a3deed539bf41b8ba6b4a9a8ce3e
+timeCreated: 1425440388
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259218
+  packageName: Happy Harvest - 2D Sample Project
+  packageVersion: 1.61
+  assetPath: Assets/HappyHarvest/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+  uploadId: 722366
