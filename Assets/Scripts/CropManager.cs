@@ -2,16 +2,17 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 
 public class CropData
 {
     public int growStage;
-    //public float growTimer;
+    public Crop cropType;
 
-    public CropData()
+    public CropData(Crop crop)
     {
         growStage = 0;
-        //growTimer = 0f;
+        cropType = crop;
     }
 }
 // untuk sekarang, growth berdasarkan second, tetapi bisa dijadikan tumbuh per hari.
@@ -21,8 +22,8 @@ public class CropManager : MonoBehaviour
 
     [SerializeField] private Tilemap cropTilemap;
     //[SerializeField] private float timeNeeded = 10f;
-    [SerializeField] private int cropSellValue = 15;
-    [SerializeField] private List<TileBase> growStageTiles;
+    //[SerializeField] private int cropSellValue = 15;
+    //[SerializeField] private List<TileBase> growStageTiles;
     private Dictionary<Vector3Int, CropData> growingCrops;
 
     [SerializeField] private Tilemap plantableTilemap;
@@ -79,7 +80,7 @@ public class CropManager : MonoBehaviour
 
             if (groundTile == wateredSoilTile)
             {
-                if (crop.growStage < growStageTiles.Count - 1)
+                if (crop.growStage < crop.cropType.daysToGrow - 1)
                 {
                     crop.growStage++;
                     UpdateCropTile(cropPosition);
@@ -91,11 +92,11 @@ public class CropManager : MonoBehaviour
         }
     }
 
-    public void PlantCrop(Vector3Int position)
+    public void PlantCrop(Vector3Int position, Crop cropToPlant)
     {
         if (growingCrops.ContainsKey(position)) return;
 
-        growingCrops.Add(position, new CropData());
+        growingCrops.Add(position, new CropData(cropToPlant));
         UpdateCropTile(position);
 
     }
@@ -104,7 +105,7 @@ public class CropManager : MonoBehaviour
     {
         if (growingCrops.TryGetValue(position, out CropData crop))
         {
-            cropTilemap.SetTile(position, growStageTiles[crop.growStage]);
+            cropTilemap.SetTile(position, crop.cropType.growStageTiles[crop.growStage]);
         }
     }
 
@@ -112,7 +113,7 @@ public class CropManager : MonoBehaviour
     {
         if (growingCrops.TryGetValue(position, out CropData crop))
         {
-            if (crop.growStage >= growStageTiles.Count - 1)
+            if (crop.growStage >= crop.cropType.daysToGrow - 1)
             {
                 return true;
             }
@@ -124,10 +125,12 @@ public class CropManager : MonoBehaviour
     {
         if (isHarvestable(position))
         {
+            CropData crop = growingCrops[position];
+
             cropTilemap.SetTile(position, null);
             growingCrops.Remove(position);
 
-            MoneyManager.instance.AddMoney(cropSellValue);
+            MoneyManager.instance.AddMoney(crop.cropType.sellValue);
         }
     }
 }

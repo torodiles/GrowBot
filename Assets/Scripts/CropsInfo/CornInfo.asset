@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02428dbf0aa604e4aafe6cb8cc315662, type: 3}
+  m_Name: CornInfo
+  m_EditorClassIdentifier: 
+  plantName: Corn
+  scientificName: Zea mays
+  plantSprite: {fileID: 7950203500690082785, guid: c6fa4b0a7bdc8634ab450a0752fe5787, type: 3}
+  plantMoney: 15
+  growthTime: 5
+  plantDescription: Corn is a tall, annual cereal grass that produces large grains,
+    or kernels, set in rows on a cob. Its kernels are considered both a vegetable
+    and a cereal grain. It's one of the most widely cultivated staple foods in the
+    world.

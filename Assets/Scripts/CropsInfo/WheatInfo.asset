@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02428dbf0aa604e4aafe6cb8cc315662, type: 3}
+  m_Name: WheatInfo
+  m_EditorClassIdentifier: 
+  plantName: Wheat
+  scientificName: Triticum aestivum
+  plantSprite: {fileID: 21300000, guid: c491ea482c05c5747a804797b1556048, type: 3}
+  plantMoney: 20
+  growthTime: 6
+  plantDescription: Wheat is a cereal grain, which is a worldwide staple food. It
+    is grown on more land area than any other food crop and is a primary source of
+    carbohydrates. The wheat plant has a long, slender stalk containing multiple
+    kernels or seeds.

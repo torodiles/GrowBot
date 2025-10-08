@@ -35,7 +35,7 @@ public class DayManager : MonoBehaviour
     {
         if (dayText != null)
         {
-            dayText.text = "Day: " + currentDay;
+            dayText.text = "Day " + currentDay;
         }
     }
 }

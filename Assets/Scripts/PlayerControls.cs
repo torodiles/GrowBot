@@ -63,13 +63,16 @@ public class PlayerControls : MonoBehaviour
     {
         Vector3Int target = GetFacingCell();
         TileBase tile = plantableTilemap.GetTile(target);
-        if (tile != null && tile.name.Contains("Soil") && !cropTilemap.HasTile(target))
+
+        Slot selectedSlot = hotbarManager.GetSelectedSlot();
+        Item seedItem = selectedSlot.currentItem;
+
+        if (tile != null && tile.name.Contains("Soil") && !cropTilemap.HasTile(target) && seedItem.cropToGrow != null)
         {
-            CropManager.instance.PlantCrop(target);
+            CropManager.instance.PlantCrop(target, seedItem.cropToGrow);
             energyBar.reduceEnergy();
 
-            Slot selectedSlot = hotbarManager.GetSelectedSlot();
-            if (selectedSlot != null && selectedSlot.currentItem != null && selectedSlot.currentItem.isStackable)
+            if (seedItem.isStackable)
             {
                 selectedSlot.RemoveItem(1);
             }

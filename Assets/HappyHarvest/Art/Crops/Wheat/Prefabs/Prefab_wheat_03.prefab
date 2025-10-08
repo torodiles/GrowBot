@@ -48,6 +48,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a2efd7b8992dcb640aad1bfdf13a0751, type: 3}
+    - target: {fileID: 6393031248553476976, guid: 40f0db9dcaeac2043b0d0409b71daadb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6393031248553476976, guid: 40f0db9dcaeac2043b0d0409b71daadb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6393031248781673410, guid: 40f0db9dcaeac2043b0d0409b71daadb, type: 3}
       propertyPath: m_Name
       value: Prefab_wheat_03
@@ -104,10 +112,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a2efd7b8992dcb640aad1bfdf13a0751, type: 3}
+    - target: {fileID: 6393031249581742725, guid: 40f0db9dcaeac2043b0d0409b71daadb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6393031249581742725, guid: 40f0db9dcaeac2043b0d0409b71daadb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6393031250089754702, guid: 40f0db9dcaeac2043b0d0409b71daadb, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a2efd7b8992dcb640aad1bfdf13a0751, type: 3}
+    - target: {fileID: 6393031250089754702, guid: 40f0db9dcaeac2043b0d0409b71daadb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6393031250089754702, guid: 40f0db9dcaeac2043b0d0409b71daadb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7368066569251628886, guid: 40f0db9dcaeac2043b0d0409b71daadb, type: 3}
       propertyPath: m_Controller
       value: 
