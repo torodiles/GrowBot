@@ -4,8 +4,14 @@ using UnityEngine.UI;
 
 public class HotbarManager : MonoBehaviour
 {
+    public static HotbarManager instance;
     public Slot[] slots;
     private int selectedIndex = 0;
+    private void Awake()
+    {
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
+    }
 
     void Start()
     {

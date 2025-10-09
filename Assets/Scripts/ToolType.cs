@@ -6,5 +6,6 @@ public enum ToolType
     Hoe,
     WaterCan,
     Basket,
-    Seed
+    Seed,
+    Sellable
 }

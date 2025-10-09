@@ -70,6 +70,9 @@ public class PlayerControls : MonoBehaviour
         if (tile != null && tile.name.Contains("Soil") && !cropTilemap.HasTile(target) && seedItem.cropToGrow != null)
         {
             CropManager.instance.PlantCrop(target, seedItem.cropToGrow);
+
+            QuestManager.instance.AdvancePlantingQuest(seedItem.name); // quest
+
             energyBar.reduceEnergy();
 
             if (seedItem.isStackable)

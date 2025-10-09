@@ -9,7 +9,7 @@ public class DayManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dayText;
     [SerializeField] private EnergyBar energyBar;
 
-    private int currentDay = 1;
+    public int currentDay = 1;
 
     private void Awake()
     {
@@ -23,8 +23,12 @@ public class DayManager : MonoBehaviour
 
     public void nextDay()
     {
+        SellBox.instance.ProcessSale();
+
         currentDay++;
         updateDayUI();
+
+        SellBox.instance.OpenForNewDay();
 
         energyBar.restoreEnergy();
         CropManager.instance.ProcessDayEnd();

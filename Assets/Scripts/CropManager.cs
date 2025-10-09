@@ -130,7 +130,13 @@ public class CropManager : MonoBehaviour
             cropTilemap.SetTile(position, null);
             growingCrops.Remove(position);
 
-            MoneyManager.instance.AddMoney(crop.cropType.sellValue);
+            if (crop.cropType.harvestableItem != null) {
+                HotbarManager.instance.AddItem(crop.cropType.harvestableItem, 1);
+            }
+            else
+            {
+                Debug.Log("Harvestable item for " + crop.cropType.cropName + "is not set.");
+            }
         }
     }
 }

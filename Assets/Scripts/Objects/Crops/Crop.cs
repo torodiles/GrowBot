@@ -8,6 +8,6 @@ public class Crop : ScriptableObject
     public string cropName;
     public int daysToGrow;
     public List<TileBase> growStageTiles;
-    public int sellValue;
-    //public Item harvestableItem;
+    //public int sellValue;
+    public Item harvestableItem;
 }

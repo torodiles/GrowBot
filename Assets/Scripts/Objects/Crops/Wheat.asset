@@ -21,4 +21,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 47c591461e6fd9b4ca4ae8b0704cd727, type: 2}
   - {fileID: 11400000, guid: 4ec1b85045d6f6644b2877282287b641, type: 2}
   - {fileID: 11400000, guid: cf256630a725ae44484c968b2852ecee, type: 2}
-  sellValue: 20
+  harvestableItem: {fileID: 11400000, guid: 7ead1d104b5845b4bb75a81df3cdecd8, type: 2}
