@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4cff79252ddab814ea1ff327e8c0b1e8, type: 3}
-  m_Name: HelloWorld
+  m_Name: MmmBread
   m_EditorClassIdentifier: 
-  title: Hello World!
-  description: Plant your first seed.
+  title: Mmmm... Bread
+  description: Gather your ready-to-be-harvested wheat! Maybe we can turn it into
+    something yummy later.
   goal:
-    goalType: 2
-    requiredAmount: 1
-    requiredItemName: CornSeed
-  moneyReward: 15
-  itemReward: {fileID: 0}
-  itemRewardAmount: 0
+    goalType: 0
+    requiredAmount: 6
+    requiredItemName: WheatItem
+  moneyReward: 30
+  itemReward: {fileID: 11400000, guid: dab5c20fea186034589e856a25fbf51e, type: 2}
+  itemRewardAmount: 3
