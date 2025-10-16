@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     public GameObject hotbarUIPanel;
     public GameObject questUIPanel;
     public GameObject questCompletePopup;
+    public GameObject shopUIPanel;
 
     [Header("Player Scripts")]
     public PlayerMovement playerMovementScript;
@@ -28,6 +29,7 @@ public class UIManager : MonoBehaviour
         infoUIPanel.SetActive(true);
         hotbarUIPanel.SetActive(true);
         questCompletePopup.SetActive(false);
+        shopUIPanel.SetActive(false);
     }
     public void HideGameUI()
     {

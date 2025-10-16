@@ -28,27 +28,27 @@ public class PlayerControls : MonoBehaviour
         if (moveInput != Vector2.zero)
             facingDirection = new Vector2Int(Mathf.RoundToInt(moveInput.x), Mathf.RoundToInt(moveInput.y));
 
-        Slot selectedSlot = hotbarManager.GetSelectedSlot();
-        if (selectedSlot == null || selectedSlot.currentItem == null) return;
+        //Slot selectedSlot = hotbarManager.GetSelectedSlot();
+        //if (selectedSlot == null || selectedSlot.currentItem == null) return;
 
-        ToolType tool = selectedSlot.GetToolType();
+        //ToolType tool = selectedSlot.GetToolType();
 
-        if (Input.GetKeyDown(KeyCode.Space) && energyBar.hasEnergy())
-        {
-            switch (tool)
-            {
-                case ToolType.Hoe: TryTill(); break;
-                case ToolType.WaterCan: TryWater(); break;
-                case ToolType.Seed: TryPlant(); break;
-                case ToolType.Basket: TryHarvest(); break;
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.Space) && energyBar.hasEnergy())
+        //{
+        //    switch (tool)
+        //    {
+        //        case ToolType.Hoe: TryTill(); break;
+        //        case ToolType.WaterCan: TryWater(); break;
+        //        case ToolType.Seed: TryPlant(); break;
+        //        case ToolType.Basket: TryHarvest(); break;
+        //    }
+        //}
 
         if (Input.GetKeyDown(KeyCode.Space) && nearBed)
             DayManager.instance.nextDay();
     }
 
-    private void TryTill()
+    public void TryTill()
     {
         Vector3Int target = GetFacingCell();
         TileBase tile = plantableTilemap.GetTile(target);
@@ -59,7 +59,7 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    private void TryPlant()
+    public void TryPlant()
     {
         Vector3Int target = GetFacingCell();
         TileBase tile = plantableTilemap.GetTile(target);
@@ -82,7 +82,7 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    private void TryHarvest()
+    public void TryHarvest()
     {
         Vector3Int target = GetFacingCell();
         if (CropManager.instance.isHarvestable(target))
@@ -92,7 +92,7 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    private void TryWater()
+    public void TryWater()
     {
         Vector3Int target = GetFacingCell();
         TileBase tile = plantableTilemap.GetTile(target);
