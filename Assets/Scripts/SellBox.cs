@@ -66,7 +66,7 @@ public class SellBox : MonoBehaviour
         {
             Item itemToAdd = selectedSlot.currentItem;
 
-            if (itemToAdd.sellPrice > 0 && itemToAdd.toolType == ToolType.None)
+            if (itemToAdd.sellPrice > 0 && itemToAdd.toolType == ToolType.Sellable)
             {
                 itemsToSell.Add(itemToAdd);
                 selectedSlot.RemoveItem(1);
